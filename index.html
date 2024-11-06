@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload and Download</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Upload and Download with Unique Key</h1>
+    
+    <!-- Unique Key Input -->
+    <div class="key-container">
+        <h2>Enter Your Unique Key</h2>
+        <input type="text" id="uniqueKey" placeholder="Enter unique key" />
+        <button onclick="setUniqueKey()">Access</button>
+    </div>
+    
+    <!-- File Upload Form -->
+    <div class="upload-container" style="display: none;">
+        <h2>Upload a File</h2>
+        <input type="file" id="fileInput" />
+        <button onclick="uploadFile()">Upload</button>
+    </div>
+    
+    <!-- File List for Download and Delete -->
+    <div class="file-list" style="display: none;">
+        <h2>Files</h2>
+        <ul id="fileList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
